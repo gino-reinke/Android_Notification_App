@@ -44,9 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationCompat.Builder notifyBuilder = getNotificationBuilder();
         // change style and set image
-        notifyBuilder.setStyle(new NotificationCompat.BigPictureStyle()
-                .bigPicture(androidImage)
-                .setBigContentTitle("Notification Updated!"));
+        notifyBuilder.setStyle(new NotificationCompat.InboxStyle()
+                .addLine(getString(R.string.update_line_1))
+                .addLine(getString(R.string.update_line_2))
+                .addLine(getString(R.string.update_line_3))
+                .setSummaryText(getString(R.string.update_summary)));
+        // Set a large icon image
+        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.mascot_1);
+
         // build and call notification
         mNotifyManager.notify(NOTIFICATION_ID, notifyBuilder.build());
 

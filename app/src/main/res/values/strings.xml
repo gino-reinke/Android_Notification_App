@@ -3,4 +3,8 @@
     <string name="notify_me">Notify Me!</string>
     <string name="update_me">Update Me!</string>
     <string name="cancel_me">Cancel Me!</string>
+    <string name="update_line_1">First message</string>
+    <string name="update_line_2">Second message</string>
+    <string name="update_summary">Summary text</string>
+    <string name="update_line_3">Third Message</string>
 </resources>
